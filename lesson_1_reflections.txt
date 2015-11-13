@@ -1,0 +1,75 @@
+How did viewing a diff between two versions help you spot the bug?
+
+- You only look at lines that have been modified, so you have to look at a lot less data.
+- Modified lines / blocks are displayed together so they are easy to compare.
+- When you compare line by line, typos are obvious:
+	-    if (KEY_STATUS.up) {
+	+    if (KEY_STATUS.spacr) {
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+- You can easily roll back changes that introduce new bugs
+- You don't need to keep old code commented out since you always have access to it,
+  so any version only contains relevant code.
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Pros:
+- Each save is a logical unit: it works on its own and is (or should be) tested.
+- It develops a mind set of breaking up work into small logical steps, which is
+less error-prone than tackling a big problem in one go.
+
+Cons:
+- There is a risk of losing work if not committing frequently enough. With automatic
+saving, the potential amount of work lost is smaller.
+- It is dependent on the developer's judgement and experience. 
+It is most useful when the commits are small logical units. Inexperienced developers
+risk misjudging how often to commit or forgetting entirely to commit for long 
+periods of time.
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+A program is split into various files in order to keep things manageable but
+files are not independent. Each file has its own public interface (functions, 
+classes, globals...) that other files rely on. A change to a file's public 
+interface will mean changes to its dependents or the program will stop working.
+Whereas other systems that deal with independent files (documentation, photos...)
+have no need to track multiple files together.
+So it all depends on whether the files are independent units or interdependent
+parts of something bigger.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+With git log I can see the whole history of the commits in anti-chronological
+order, so most recent first. It shows for each commit: its id, its author, date 
+and message. When used with --stat, I can also see which files were modified and 
+how many lines were added and removed. This enables me to identify the commit I 
+am interested in. 
+
+Then I can use git diff to see what has changed between this commit and the 
+previous commit by simply copying and pasting the commit ids on the command 
+line. Alternatively I can use the first few characters of the commit ids and 
+git will find them.
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+It's fairly easy to find which commit first introduced the bug (as long as the 
+bug is easy to reproduce...) and from there to find the flawed code.
+Although using TDD would make me more confident that bugs are not introduced in 
+the first place.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use it to keep previous versions of my files as I develop.
+I also want to learn to use it to collaborate with other people.
