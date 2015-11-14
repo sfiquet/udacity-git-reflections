@@ -43,10 +43,20 @@ doing exploratory work, like getting a prototype together. Still, why not commit
 as you go?
 
 
-*** Prompts ***
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+- When you need to maintain several versions of the code in parallel, e.g. when
+some users have v1, some v2 and others v3 of the product. Or more simply when 
+you have a development version and a production version.
+- When different users need alternative version of your code, as in the 
+translation example. You might not want to ship everything to everybody.
+- When you want to experiment.
+- To cater for priority changes, e.g. you are working on something and suddenly
+you need to drop everything to work on an urgent bug fix.
+
+
+*** Prompts ***
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
