@@ -56,9 +56,14 @@ translation example. You might not want to ship everything to everybody.
 you need to drop everything to work on an urgent bug fix.
 
 
-*** Prompts ***
 How do the diagrams help you visualize the branch structure?
 
+The diagrams show how each commit is related to the others through their parent
+relationship. All the commits in a branch are displayed on the same line with 
+the branch name at the tip of the branch. This way it is easy to see how commits
+are organised in branches and how they relate to each other.
+
+*** Prompts ***
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
