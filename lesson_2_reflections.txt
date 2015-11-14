@@ -22,11 +22,28 @@ being possible, making the process awkward and labour-intensive. Commits would
 then only be done at the end of big units of work, which would defeat the purpose.
 
 
-
-*** Prompts ***
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+Instead of committing everything, you can pick and chose the files that 
+represent a single logical change, stage them and commit them, before doing the 
+same for the rest.
+
+I think there are limits to the technique though: It requires logically separate 
+changes to take place in different files. Often you will be developing 
+something, come across a small bug in the file you're working in and fix it 
+without a second thought. Then you have two logical changes in the same file 
+and you can't split them into separate commits. You would have to be very 
+careful and create a separate branch for fixing the bug instead.
+
+Also, if logically separate changes are located in separate files, it's 
+unlikely you wrote them at the same time. Why let them accumulate? Just commit 
+after each change. The only case I can think of that makes sense is if you are 
+doing exploratory work, like getting a prototype together. Still, why not commit
+as you go?
+
+
+*** Prompts ***
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
