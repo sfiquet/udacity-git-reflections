@@ -3,6 +3,7 @@ What happens when you initialize a repository? Why do you need to do it?
 Git creates a hidden directory called .git that contains the repository history 
 metadata from its creation. If you don't do it, you have no way of saving commits.
 
+********************************************************************************
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
@@ -21,6 +22,7 @@ Without the staging are, each commit would require serious file cleaning before
 being possible, making the process awkward and labour-intensive. Commits would 
 then only be done at the end of big units of work, which would defeat the purpose.
 
+********************************************************************************
 
 How can you use the staging area to make sure you have one commit per logical
 change?
@@ -42,6 +44,7 @@ after each change. The only case I can think of that makes sense is if you are
 doing exploratory work, like getting a prototype together. Still, why not commit
 as you go?
 
+********************************************************************************
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
@@ -55,6 +58,7 @@ translation example. You might not want to ship everything to everybody.
 - To cater for priority changes, e.g. you are working on something and suddenly
 you need to drop everything to work on an urgent bug fix.
 
+********************************************************************************
 
 How do the diagrams help you visualize the branch structure?
 
@@ -63,9 +67,19 @@ relationship. All the commits in a branch are displayed on the same line with
 the branch name at the tip of the branch. This way it is easy to see how commits
 are organised in branches and how they relate to each other.
 
-*** Prompts ***
+********************************************************************************
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+The branches are merged together as a new commit into the currently checked out 
+branch. The commit is shown as having two parents because it stores information
+about both parents. Therefore all commits from both branches can be accessed 
+from the merge commit.
+
+********************************************************************************
+
+
+*** Prompts ***
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
