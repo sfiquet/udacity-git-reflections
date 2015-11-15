@@ -79,7 +79,10 @@ from the merge commit.
 
 ********************************************************************************
 
-
-*** Prompts ***
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Pros: It's a lot faster and fairly reliable.
+
+Cons: It's not perfect. If a developer removes a line that another developer's 
+new code depends on, the code will break if Git removes it automatically.
