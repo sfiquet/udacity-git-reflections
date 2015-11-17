@@ -1,7 +1,12 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+You would want to use a remote repository in order to share code with other people. 
+A public repository allows you to do open source development and, for proprietary 
+code, a private repository gives a team a way to share and review code. Even for 
+solo work it allows access to the code from multiple machines.
+
+*********************************************************************************
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
