@@ -11,7 +11,11 @@ solo work it allows access to the code from multiple machines.
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+Because of merging conflicts. You don't want to have to handle merge conflicts 
+when you are in the middle of something else. You want to be in control and do
+it only when your work is in a stable state.
+
+*********************************************************************************
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
