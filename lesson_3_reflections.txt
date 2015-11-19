@@ -45,7 +45,11 @@ of the code in parallel.
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+You can use it to download the current state of the remote without affecting 
+your working directory. Then you can merge it with your working directory when
+it's convenient. This can be done offline.
+
+*********************************************************************************
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
