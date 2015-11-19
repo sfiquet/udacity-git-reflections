@@ -68,4 +68,11 @@ there might be competition for file access.
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+- When you are collaborating with others: it makes combining changes easier to manage.
+- When you are working on several versions in parallel
+
+Working on a separate branch makes it easier to manage complexity by having an 
+explicit merge process and code review.
+Working directly in master is a simpler process, which can work if you have a 
+system to avoid overwriting other people's code. 
+It's also fine if you are working on your own on a single version of your product.
