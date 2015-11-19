@@ -54,7 +54,16 @@ it's convenient. This can be done offline.
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+You would need to have a system in place to ensure files are not edited 
+concurrently, such as file locking.
+
+It would be easier because there would be no need to merge different versions 
+of the same file.
+
+But it would be harder for several developers to work on the same area since 
+there might be competition for file access.
+
+*********************************************************************************
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
